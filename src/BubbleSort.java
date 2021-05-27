@@ -4,7 +4,7 @@
  * Bubble Sorting is 'stable' technique. i.e maintains input array order when there is are same keys.
  */
 public class BubbleSort {
-    static int[] arr = new int[]{23,4,6,4,1,9,7,6};
+    static int[] arr = new int[]{12, 1, 4, 6, 7, 4, 3};
 
     public static void main(String[] args) {
         bubleSort(arr);
