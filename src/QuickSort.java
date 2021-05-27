@@ -3,21 +3,21 @@ public class QuickSort {
     static int[] arr = new int[]{12, 1, 4, 6, 7, 4, 3};
 
     public static void main(String[] args) {
-        quickSort(0, arr.length-1);
+        quickSort(arr, 0, arr.length-1);
         for (int i : arr) {
             System.out.print(i + " ");
         }
     }
 
-    public static void quickSort(int low, int high) {
+    public static void quickSort(int[] arr, int low, int high) {
         if(low >= high) return;
         if (outOfRange(arr, low) || outOfRange(arr, high)) return;
-        int pivotIndex = partition(low, high);
-        quickSort(low, pivotIndex-1);
-        quickSort(pivotIndex+1, high);
+        int pivotIndex = partition(arr, low, high);
+        quickSort(arr, low, pivotIndex-1);
+        quickSort(arr, pivotIndex+1, high);
     }
 
-    public static int partition(int low, int high) {
+    public static int partition(int[] arr, int low, int high) {
         if(low >= high) return low;
         int pivotIndex = low;
         int pivotElement = arr[high];
