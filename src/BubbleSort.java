@@ -1,3 +1,8 @@
+/**
+ * Worst case complexity: O(n^2)
+ * Best case: O(n)
+ * Bubble Sorting is 'stable' technique. i.e maintains input array order when there is are same keys.
+ */
 public class BubbleSort {
     static int[] arr = new int[]{23,4,6,4,1,9,7,6};
 
