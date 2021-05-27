@@ -1,3 +1,8 @@
+/**
+ * Worst case: O(n^2)
+ * Best case: O(nlog(n))
+ * Not a 'stable' algorithm.
+ */
 public class QuickSort {
 
     static int[] arr = new int[]{12, 1, 4, 6, 7, 4, 3};
